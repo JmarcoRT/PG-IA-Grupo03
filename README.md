@@ -35,39 +35,43 @@ AndinaSense es una empresa ficticia de agricultura de precisión que brinda serv
 
 El dataset andinasense_parcelas.csv es propio del grupo y fue generado de forma reproducible con semilla fija (SEED = 42). Contiene 1500 registros y 13 variables, con mezcla de numéricas y categóricas, una variable objetivo continua (rendimiento_kg_ha) y una categórica (calidad_cosecha). Presenta correlaciones, ruido, valores atípicos y nulos intencionales para exigir preprocesamiento.
 
-El proceso generador completo está documentado en dataset/PG_IA_Grupo03_GeneracionDataset.ipynb. Para reproducir el dataset desde cero, ejecutar ese notebook con Restart & Run All; produce un andinasense_parcelas.csv idéntico al incluido en este repositorio.
+El proceso generador completo está documentado en data/PG_IA_Grupo03_GeneracionDataset.ipynb. Para reproducir el dataset desde cero, ejecutar ese notebook con Restart & Run All; produce un andinasense_parcelas.csv idéntico al incluido en este repositorio.
 
 ## Estructura del repositorio
 
 ```
-PG-IA-Grupo03/
+proyecto-ia-grupo03/
 ├── README.md
-├── dataset/
+├── autoevaluacion/
+├── data/
 │   ├── andinasense_parcelas.csv
 │   └── PG_IA_Grupo03_GeneracionDataset.ipynb
-├── bloque_A_java/
+├── exposicion/
+│   ├── enlace_video.txt
+│   └── orden_participacion.txt
+├── java/
 │   ├── Informe1_Busqueda/
 │   └── Informe2_AlfaBeta/
-├── bloque_B_notebooks/
+├── notebooks/
 │   ├── andinasense_parcelas.csv
 │   ├── PG_IA_Grupo03_Informe3_Regresion.ipynb
 │   ├── PG_IA_Grupo03_Informe4_Clasificacion.ipynb
 │   ├── PG_IA_Grupo03_Informe5_Agrupamiento.ipynb
 │   └── PG_IA_Grupo03_Informe6_ReduccionDimensionalidad.ipynb
-├── informes_html/
+├── informes/
 │   ├── PG_IA_Grupo03_Informe3_Regresion.html
 │   ├── PG_IA_Grupo03_Informe4_Clasificacion.html
 │   ├── PG_IA_Grupo03_Informe5_Agrupamiento.html
 │   └── PG_IA_Grupo03_Informe6_ReduccionDimensionalidad.html
-└── anexo_prompts/
+└── prompts/
     └── PG_IA_Grupo03_AnexoPrompts.pdf
 ```
 
-El archivo andinasense_parcelas.csv se incluye también dentro de bloque_B_notebooks/ para que los notebooks se ejecuten sin ajustar rutas.
+El archivo andinasense_parcelas.csv se incluye también dentro de notebooks/ para que los notebooks se ejecuten sin ajustar rutas. La carpeta exposicion/ contiene el enlace al video y el orden de participación, y autoevaluacion/ contiene la autoevaluación del equipo.
 
 ## Cómo ejecutar el Bloque B
 
-1. Abrir cualquiera de los notebooks de bloque_B_notebooks/ en Jupyter.
+1. Abrir cualquiera de los notebooks de notebooks/ en Jupyter.
 2. Ejecutar con Restart & Run All. El notebook carga andinasense_parcelas.csv desde su misma carpeta.
 3. Los notebooks usan SEED = 42 y un flujo con Pipeline y ColumnTransformer para evitar fuga de datos.
 
@@ -75,8 +79,8 @@ Requisitos: Python 3, numpy, pandas, matplotlib, seaborn y scikit-learn.
 
 ## Cómo ejecutar el Bloque A
 
-Los programas en Java de los Informes 1 y 2 están en bloque_A_java/. Cada carpeta contiene los archivos .java y el informe correspondiente. Compilar y ejecutar con un JDK estándar desde cada carpeta.
+Los programas en Java de los Informes 1 y 2 están en java/. Cada carpeta contiene los archivos .java y el informe correspondiente. Compilar y ejecutar con un JDK estándar desde cada carpeta.
 
 ## Declaración de uso de IA
 
-Durante el desarrollo del proyecto se utilizó IA generativa (Claude Opus 4.8) como apoyo para estructurar el modelado, generar el dataset sintético, depurar código e interpretar resultados. Todos los prompts empleados, junto con su objetivo, resultado y la validación realizada por el equipo, están documentados en anexo_prompts/PG_IA_Grupo03_AnexoPrompts.pdf. El equipo verificó, corrigió y comprendió todo el código y los resultados presentados.
+Durante el desarrollo del proyecto se utilizó IA generativa (Claude Opus 4.8) como apoyo para estructurar el modelado, generar el dataset sintético, depurar código e interpretar resultados. Todos los prompts empleados, junto con su objetivo, resultado y la validación realizada por el equipo, están documentados en prompts/PG_IA_Grupo03_AnexoPrompts.pdf. El equipo verificó, corrigió y comprendió todo el código y los resultados presentados.

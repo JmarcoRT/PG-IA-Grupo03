@@ -1,0 +1,5 @@
+00:00–04:45 — Apellidos y nombres del integrante 1
+04:45–09:30 — Apellidos y nombres del integrante 2
+09:30–14:15 — Apellidos y nombres del integrante 3
+14:15–19:00 — Apellidos y nombres del integrante 4
+19:00–23:45 — Apellidos y nombres del integrante 5
